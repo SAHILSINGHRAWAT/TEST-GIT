@@ -1,0 +1,58 @@
+.home-sec-1 .banner-img {
+  position: relative;
+  z-index: 9;
+  width: 200px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .home-sec-1 .banner-img {
+    width: 400px;
+    margin-right: 60px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (min-width: 1536px) {
+  .home-sec-1 .banner-img {
+    width: 600px;
+    margin-right: 0;
+    margin-top: 0;
+  }
+}
+
+.hero-banner1 {
+  position: relative;
+  background-image: url(./EampleCarouselImage/bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media only screen and (min-width: 768px) {
+  .hero-banner1 {
+    height: calc(100vh - 80px);
+  }
+}
+
+.hero-banner2 {
+  position: relative;
+  background-image: url(./EampleCarouselImage/bg-2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media only screen and (min-width: 768px) {
+  .hero-banner2 {
+    height: calc(100vh - 80px);
+  }
+}
+
+.hero-banner3 {
+  position: relative;
+  background-image: url(./EampleCarouselImage/bg-3.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media only screen and (min-width: 768px) {
+  .hero-banner3 {
+    height: calc(100vh - 80px);
+  }
+}/*# sourceMappingURL=Home.css.map */

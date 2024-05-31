@@ -1,0 +1,137 @@
+.home-sec-1 {
+  position: relative;
+  height: 100vh;
+
+  .hero-banner1 {
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+    background-image: linear-gradient(
+        45deg,
+        rgba(135, 135, 135, 0.433),
+        rgba(100, 101, 101, 0.431)
+      ),
+      url(./CarouselImage/bg-1.jpg); /* Check image path and folder structure */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .content1 {
+      height: 280px;
+      width: 530px;
+      padding: 10px 30px;
+      background-color: rgb(236, 236, 236);
+      color: black;
+      position: absolute;
+      left: 5%;
+      top: 25%;
+    }
+  }
+
+  .hero-banner2 {
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+    background-image: linear-gradient(
+        45deg,
+        rgba(135, 135, 135, 0.433),
+        rgba(100, 101, 101, 0.431)
+      ),
+      url(./CarouselImage/bg-2.jpg); /* Check image path and folder structure */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    .content1 { /* Selector might be incorrect, should it be .content2? */
+      height: 280px;
+      width: 560px;
+      padding: 10px 20px;
+      background-color: rgb(236, 236, 236);
+      color: black;
+      position: absolute;
+      left: 5%;
+      top: 25%;
+    }
+  }
+
+  .hero-banner3 {
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+    background-image: linear-gradient(
+        45deg,
+        rgba(135, 135, 135, 0.433),
+        rgba(100, 101, 101, 0.431)
+      ),
+      url(./CarouselImage/bg-3.jpg); /* Check image path and folder structure */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .content3 {
+      height: 280px;
+      width: 530px;
+      padding: 10px 30px;
+      background-color: rgb(255, 255, 255);
+      color: black;
+      position: absolute;
+      right: 20%;
+      top: 25%;
+    }
+  }
+
+  /* --------------------animation on div------------------ */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(0%);
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(20%);
+    }
+  }
+
+  .content1,
+  .content3 {
+    opacity: 0; /* Initially set opacity to 0 */
+    animation: fadeIn 2s ease-in-out forwards; /* Use forwards to maintain the final state of animation */
+    transform: translateX(0%); /* Initial position */
+  }
+}
+
+.home1 {
+  position: relative;
+}
+
+.appointmentForm {
+  position: absolute;
+  top: 730%; /* This value seems very high, might need adjustment */
+  left: 20%;
+}
+
+// -----------------------------media query-------------------
+@media screen and (max-width: 768px) {
+  /* Adjust styles for mobile here */
+  .home-sec-1 {
+    height: auto; /* Remove fixed height for mobile */
+  }
+
+  .hero-banner1 .content1,
+  .hero-banner2 .content1,
+  .hero-banner3 .content3 {
+    width: 90%; /* Set content width to a percentage */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+  /* Adjust styles for tablets here */
+
+  .hero-banner1 .content1,
+  .hero-banner2 .content1,
+  .hero-banner3 .content3 {
+    width: 70%; /* Adjust content width for tablets */
+  }
+}
